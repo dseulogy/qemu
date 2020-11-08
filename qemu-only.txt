@@ -1,0 +1,4 @@
+sudo pacman -S qemu
+sudo qemu-img create ubuntu.img 10G
+sudo qemu-img create -f qcow2 ubuntu.qcow 10G
+sudo qemu-system-x86_64 -hda ubuntu.img -boot d -cdrom /home/user/Downloads/ubuntu.iso -m 2048
